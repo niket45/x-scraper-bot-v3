@@ -324,7 +324,7 @@ def initialize_driver():
         options.add_argument(f"user-agent={user_agent}")
         try:
             from webdriver_manager.chrome import ChromeDriverManager
-            driver_path = ChromeDriverManager(driver_version="latest").install()
+            driver_path = ChromeDriverManager().install()
             import os
             correct_path = os.path.join(os.path.dirname(driver_path), "chromedriver")
             os.chmod(correct_path, 0o755)  # Fix permissions
