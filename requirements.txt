@@ -1,0 +1,4 @@
+python-telegram-bot==20.7
+selenium==4.15.2
+webdriver-manager==4.0.1
+tabulate==0.9.0
