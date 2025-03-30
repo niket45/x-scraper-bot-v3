@@ -523,9 +523,7 @@ def split_message(text, chunk_size=4000):
     return [text[i:i + chunk_size] for i in range(0, len(text), chunk_size)]
 
 def main():
-    bot_token = os.getenv("BOT_TOKEN")
-    if not bot_token:
-        raise ValueError("BOT_TOKEN environment variable not set")
+    bot_token = "7219982583:AAH-bbZNMmrXFulvQvKgtXBIvjSlDosEjfo"
     app = Application.builder().token(bot_token).build()
     
     app.add_handler(CommandHandler("start", start_command))
